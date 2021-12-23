@@ -13,17 +13,28 @@ body {
     margin: 10% auto;
     border: 1vmin #36393A solid;
     width: 75%;
-    height: 75%;
     background: #92979B;
     justify-content: flex-start !important;
-}
-
-input, #add {
-    height: 5vmin;
+    border-radius: 2vmin;
 }
 
 ul {
     list-style: none;
+    padding: 1vmin;
+}
+
+li {
+    font-size: 1em;
+    text-align: center;
+}
+
+input, #add {
+    height: 5vmin;
+    margin: 1vmin;
+}
+
+button, .delete, #edit {
+    cursor: pointer;
 }
 
 .flex {
@@ -39,6 +50,27 @@ ul {
     flex-direction: row;
 }
 
+.delete {
+    margin: 0 1vmin;
+    color: #FF0000;
+    visibility: hidden;
+}
 
+.delete:hover {
+    border: .25vmin solid red;
+}
 
+#title, h1 {
+    margin: 0;
+}
 
+#edit {
+    text-align: center;
+    text-decoration: underline;
+    color: #0000cd;
+    margin-top: 0;
+}
+
+#edit:hover {
+    color: #FFF;
+}
