@@ -25,14 +25,14 @@ ul {
 
 li {
     font-size: 1em;
-    text-align: center;
+    text-align: left;
 }
 
-input, #add {
+input {
     height: 5vmin;
+    width: 30vmin;
     margin: 1vmin;
 }
-
 button, .delete, #edit {
     cursor: pointer;
 }
