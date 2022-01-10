@@ -6,25 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/main.js" defer></script>
 </head>
 <body class="flex column">
     <div id="title">
        <h1>My Developer Skills</h1> 
-       <p id="edit">Edit</p>
+       <ul id="options" class="flex row">
+           <li id="new">Add New</li>
+           <li id="delete">Delete</li>
+           <li id="save">Save</li>
+       </ul> 
     </div>
-    <div id="skills">
-        <ul>
-        
+    <div id="skills" class="flex col">
+        <div id="new-skills" class="flex row">
+            <i id="check" class="fas fa-check"></i>
+            <input name="skill" type="text" value="">
+            <button id="add" type="submit">Add Skill</button>
+        </div>
+    </div>
+    <div id="list">
+        <ul id="skill-list" class="flex column">
+            
         </ul>  
     </div>
-    <div id="new-skills" class="flex row">
-        
-            <input name="skill" type="text" value="">
-
-            <button id="add" type="submit">Add Skill</button>
-    </div>
+    
+    <footer class="flex row">
+        <a href="https://github.com/CodyMurr" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://ga-students.slack.com/team/U02PFPHNQ57" target="_blank"><i class="fab fa-slack"></i></a>
+        <a href="https://codepen.io/CodeMur93" target="_blank"><i class="fab fa-codepen"></i></a>
+        <a href="https://www.linkedin.com/in/cody-w-murray?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bv4%2Fd0gnhQnmOJ0lVIH6M5w%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </footer>
     
 
 </body>
